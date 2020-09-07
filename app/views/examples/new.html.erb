@@ -1,0 +1,10 @@
+<h1>Radio Buttons</h1>
+
+<%= form_tag '/examples' do %>
+  <div data-controller="radios" data-target="radios.buttons" data-action="load@window->radios#loadEvent">
+    <div><%= radio_button_tag 'radios', 'a' %> a</div>
+    <div><%= radio_button_tag 'radios', 'b' %> b</div>
+  </div>
+
+  <%= submit_tag %>
+<% end %>

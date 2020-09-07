@@ -1,0 +1,7 @@
+<% if params['radios'].present? %>
+  You chose <code><%= params['radios'] %></code>.
+
+  Now hit the back button in your browser. Stimulus will then not find the selected radio button.
+<% else %>
+  Please choose an option to reproduce the problem.
+<% end %>
